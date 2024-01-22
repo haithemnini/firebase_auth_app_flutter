@@ -1,0 +1,73 @@
+name: user_auth_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies: 
+  # Backend Repository for the app 
+  # Handles authentication-related functionalities
+  auth_repository:
+    path: packages/auth_repository
+  # Handles caching-related functionalities
+  cache_repository:
+    path: packages/cache_repository 
+  # Handles user-related functionalities
+  user_repository:
+    path: packages/user_repository 
+
+  # BLoC state management library
+  bloc: ^8.1.2 
+  # Code generation for BLoC
+  build_runner: ^2.4.7 
+  # Icons for Cupertino (iOS-style) widgets
+  cupertino_icons: ^1.0.2 
+  # Integrates Firebase authentication into Flutter apps
+  firebase_auth: ^4.15.3
+  # Core Flutter Firebase plugin
+  firebase_core: ^2.24.2
+  flutter:
+    sdk: flutter
+  # State management library for Flutter
+  flutter_bloc: ^8.1.3 
+  # Flutter screen adaptation utility
+  flutter_screenutil: ^5.9.0
+  # Toast notifications for Flutter
+  flutter_styled_toast: ^2.2.1 
+  # SVG rendering for Flutter
+  flutter_svg: ^2.0.9
+  # Code generation for immutable classes
+  freezed: ^2.4.6 
+  freezed_annotation: ^2.4.1 
+  # Service locator for dependency injection
+  get_it: ^7.6.4 
+  # Persistent storage for Flutter
+  shared_preferences: ^2.2.2 
+  # Smooth Page Indicator: A customizable page indicator 
+  smooth_page_indicator: ^1.1.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0 
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/svgs/ 
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-Light.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf

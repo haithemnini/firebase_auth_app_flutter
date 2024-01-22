@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533027461303",
+    "project_id": "uesr-auth",
+    "storage_bucket": "uesr-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533027461303:android:6e0b39165522df8429d532",
+        "android_client_info": {
+          "package_name": "com.example.user_auth_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgwFz9PgTrwmIWjBx4NZVhBrUMrf1rc0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
